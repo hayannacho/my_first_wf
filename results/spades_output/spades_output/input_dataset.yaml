@@ -1,0 +1,7 @@
+- "left reads":
+  - "/Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/clean_1.fastq"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/clean_2.fastq"
+  "type": "paired-end"

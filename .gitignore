@@ -1,0 +1,6 @@
+data/ERR1755086_1.fastq.gz
+data/ERR1755086_2.fastq.gz
+work/
+.nextflow/
+.nextflow.log*
+.DS_Store

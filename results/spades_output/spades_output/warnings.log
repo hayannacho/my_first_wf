@@ -1,0 +1,8 @@
+
+=== Error correction and assembling warnings:
+ * 0:00:01.852     2M / 1337M WARN    General                 (simplification.cpp        : 500)   The determined erroneous connection coverage threshold may be determined improperly
+ * 0:00:01.842     3M / 1334M WARN    General                 (kmer_coverage_model.cpp   : 366)   Failed to determine erroneous kmer threshold. Threshold set to: 5
+ * 0:00:02.340     2M / 1334M WARN    General                 (pair_info_count.cpp       : 358)   Unable to estimate insert size for paired library #0
+ * 0:00:02.340     2M / 1334M WARN    General                 (pair_info_count.cpp       : 364)   None of paired reads aligned properly. Please, check orientation of your read pairs.
+ * 0:00:02.343     2M / 1334M WARN    General                 (repeat_resolving.cpp      :  81)   Insert size was not estimated for any of the paired libraries, repeat resolution module will not run.
+======= Warnings saved to /Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/spades_output/warnings.log

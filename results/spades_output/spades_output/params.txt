@@ -1,0 +1,37 @@
+Command line: /usr/local/bin/spades.py	--careful	-1	/Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/clean_1.fastq	-2	/Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/clean_2.fastq	-o	/Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/spades_output	
+
+System information:
+  SPAdes version: 3.15.3
+  Python version: 3.9.6
+  OS: Linux-6.10.14-linuxkit-x86_64-with-glibc2.28
+
+Output dir: /Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/spades_output
+Mode: read error correction and assembling
+Debug mode is turned OFF
+
+Dataset parameters:
+  Standard mode
+  For multi-cell/isolate data we recommend to use '--isolate' option; for single-cell MDA data use '--sc'; for metagenomic data use '--meta'; for RNA-Seq use '--rna'.
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/clean_1.fastq']
+      right reads: ['/Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/clean_2.fastq']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Assembly parameters:
+  k: automatic selection based on read length
+  Repeat resolution is enabled
+  Mismatch careful mode is turned ON
+  MismatchCorrector will be used
+  Coverage cutoff is turned OFF
+Other parameters:
+  Dir for temp files: /Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/spades_output/tmp
+  Threads: 16
+  Memory limit (in Gb): 7
+

@@ -1,0 +1,38 @@
+½---
+max read length: 43
+nomerge max read length: 43
+average read length: 42.4829
+average coverage: 7.66667
+libraries:
+  - type:            paired-end
+    number:          1
+    orientation:     fr
+    left reads:
+      - '/Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/spades_output/corrected/clean_1.00.0_0.cor.fastq.gz'
+    right reads:
+      - '/Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/spades_output/corrected/clean_2.00.0_0.cor.fastq.gz'
+    single reads:
+      - '/Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/spades_output/corrected/clean__unpaired.00.0_0.cor.fastq.gz'
+    data:
+      unmerged read length: 43
+      merged read length: 0
+      insert size mean: 0
+      insert size deviation: 0
+      insert size left quantile: 0
+      insert size right quantile: 0
+      insert size median: 0
+      insert size mad: 0
+      insert size distribution: {  }
+      pi threshold:    0
+      binary reads info:
+        binary converted: true
+        bin reads info file: '/Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/spades_output/.bin_reads/INFO_0'
+        paired read prefix: '/Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/spades_output/.bin_reads/paired_0'
+        merged read prefix: '/Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/spades_output/.bin_reads/merged_0'
+        single read prefix: '/Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/spades_output/.bin_reads/single_0'
+        chunk num:       8
+      single reads mapped: false
+      library index:   0
+      number of reads: 6917
+      total nucleotides: 293854
+...

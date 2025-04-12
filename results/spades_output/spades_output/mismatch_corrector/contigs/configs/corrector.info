@@ -1,0 +1,7 @@
+"bwa": "/usr/local/bin/spades-bwa"
+"dataset": "/Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/spades_output/input_dataset.yaml"
+"log_filename": "log.properties"
+"max_nthreads": !!int "16"
+"output_dir": "/Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/spades_output/mismatch_corrector/contigs"
+"strategy": "mapped_squared"
+"work_dir": "/Users/hayoungannacho/my_first_wf/work/91/a9498bccc95806b6e1dc02d446249e/spades_output/tmp/corrector_cqum108l"
