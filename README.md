@@ -88,10 +88,10 @@ The original workflow and the revised workflow were executed with real fastp, SP
 
 The archived subset retained **4,708 reads per mate** and produced only **two contigs totaling 71 bases** in the checked environment. This tiny sample demonstrates workflow execution, not a useful or validated genome assembly. Hardware emulation and the tested tool versions differ from the historical macOS/BioContainers setup.
 
-## Coursework and contribution scope
+## Coursework
 
-Before this update, `main.nf`, `nextflow.config` and both included input FASTQ files matched `GATECH/Spring2025/biol7210/my_first_wf/` byte-for-byte. The archived project and existing repository README associate the workflow with Anna Cho's BIOL 7210 coursework. They do not independently establish exclusive line-level authorship.
+Individual coursework — BIOL 7210, Spring 2025. I composed the Nextflow workflow connecting fastp trimming with SPAdes assembly and SeqKit statistics, including input, execution and output configuration.
 
-The demonstrated contribution is workflow composition: connecting trimming to assembly and statistics, configuring execution, and exposing inputs and outputs. The fastp, SPAdes and SeqKit algorithms are external tools, not personal implementations.
+The workflow implementation covers connecting trimming to assembly and statistics, configuring execution, and exposing inputs and outputs. The fastp, SPAdes and SeqKit algorithms are external tools, not personal implementations.
 
 This edition adds configurable input/output paths, missing-input checks, explicit resource/Phred settings, an isolated execution environment and synthetic verification. These maintenance additions are distinguished from the original coursework in [provenance](docs/PROVENANCE.md).

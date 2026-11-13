@@ -2,7 +2,7 @@
 
 Original source: `GATECH/Spring2025/biol7210/my_first_wf/` in the user-supplied `GATECH.zip`. Baseline public commit: `1af7c15`. [SHA-256 comparison](source-comparison.json).
 
-Before this update, `main.nf`, `nextflow.config`, `data/mini_1.fastq` and `data/mini_2.fastq` were byte-for-byte identical to that archive. The two data files are unchanged by this update. Archive identity establishes source consistency, not exclusive authorship or independent verification of the original ENA subsampling claim.
+Before this update, `main.nf`, `nextflow.config`, `data/mini_1.fastq` and `data/mini_2.fastq` were byte-for-byte identical to that archive. The two data files are unchanged by this update. The input files retain the original ENA attribution; the original subsampling procedure was not re-created.
 
 ## Changes made during this review
 
