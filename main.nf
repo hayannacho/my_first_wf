@@ -3,11 +3,11 @@ nextflow.enable.dsl=2
 
 workflow {
     Channel
-        .fromPath('data/mini_1.fastq')
+        .fromPath(params.read1, checkIfExists: true)
         .set { read1 }
 
     Channel
-        .fromPath('data/mini_2.fastq')
+        .fromPath(params.read2, checkIfExists: true)
         .set { read2 }
 
     fastp(read1, read2) | spades
@@ -18,7 +18,7 @@ process fastp {
     tag "fastp on ${read1}"
 
     container 'quay.io/biocontainers/fastp:0.23.2--h5f740d0_3'
-    publishDir 'results', mode: 'copy'
+    publishDir params.outdir, mode: 'copy'
 
     input:
     path read1
@@ -30,7 +30,7 @@ process fastp {
 
     script:
     """
-    fastp -i $read1 -I $read2 -o clean_1.fastq -O clean_2.fastq -w 4
+    fastp -i $read1 -I $read2 -o clean_1.fastq -O clean_2.fastq -w ${task.cpus}
     """
 }
 
@@ -38,7 +38,7 @@ process spades {
     tag "spades on cleaned reads"
 
     container 'quay.io/biocontainers/spades:3.15.3--h95f258a_0'
-    publishDir 'results/spades_output', mode: 'copy'
+    publishDir params.outdir, mode: 'copy'
 
     input:
     path 'clean_1.fastq'
@@ -49,7 +49,7 @@ process spades {
 
     script:
     """
-    spades.py --careful -1 clean_1.fastq -2 clean_2.fastq -o spades_output
+    spades.py --careful --phred-offset 33 -t ${task.cpus} -m ${task.memory.toGiga()} -1 clean_1.fastq -2 clean_2.fastq -o spades_output
     """
 }
 
@@ -57,7 +57,7 @@ process seqkit_stats {
     tag "seqkit on cleaned reads"
 
     container 'quay.io/biocontainers/seqkit:2.3.1--h9ee0642_0'
-    publishDir 'results', mode: 'copy'
+    publishDir params.outdir, mode: 'copy'
 
     input:
     path 'clean_1.fastq'

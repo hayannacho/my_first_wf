@@ -1,0 +1,138 @@
+{
+  "archive": "GATECH.zip",
+  "base_commit": "1af7c1516f3bf58e4e5a7c5463aedfdffd9f8189",
+  "files": [
+    {
+      "repository_path": "main.nf",
+      "before_sha256": "efdd9ac3b7214ec9530326161e9ffefbca6c458c54652df86b9f3c66c8d2565b",
+      "archive_comparisons": [
+        {
+          "archive_member": "GATECH/Spring2025/biol7210/my_first_wf/main.nf",
+          "sha256": "efdd9ac3b7214ec9530326161e9ffefbca6c458c54652df86b9f3c66c8d2565b",
+          "identical": true,
+          "identical_ignoring_trailing_whitespace": true
+        }
+      ]
+    },
+    {
+      "repository_path": "nextflow.config",
+      "before_sha256": "8b61e8d44266727fd0e8bdd145b28abf78f7e593e627b124167a85686ed7764e",
+      "archive_comparisons": [
+        {
+          "archive_member": "GATECH/Spring2025/biol7210/my_first_wf/nextflow.config",
+          "sha256": "8b61e8d44266727fd0e8bdd145b28abf78f7e593e627b124167a85686ed7764e",
+          "identical": true,
+          "identical_ignoring_trailing_whitespace": true
+        }
+      ]
+    },
+    {
+      "repository_path": "data/mini_1.fastq",
+      "before_sha256": "f6c4e4a72158b15478aecab678ab6d3abe8312bf5e7427b7dc70d9029c2be12b",
+      "archive_comparisons": [
+        {
+          "archive_member": "GATECH/Spring2025/biol7210/my_first_wf/data/mini_1.fastq",
+          "sha256": "f6c4e4a72158b15478aecab678ab6d3abe8312bf5e7427b7dc70d9029c2be12b",
+          "identical": true,
+          "identical_ignoring_trailing_whitespace": true
+        },
+        {
+          "archive_member": "GATECH/Spring2025/biol7210/my_first_wf/work/16/d2c432bbd1e8a23e7f29bebc4779e8/mini_1.fastq",
+          "sha256": "fa105c9aacbdebe34242f293676e84050befde828c56954ea12768a99f6eb1ba",
+          "identical": false,
+          "identical_ignoring_trailing_whitespace": false
+        },
+        {
+          "archive_member": "GATECH/Spring2025/biol7210/my_first_wf/work/5b/ce31a002c34897fb8016edd6c354b9/mini_1.fastq",
+          "sha256": "fa105c9aacbdebe34242f293676e84050befde828c56954ea12768a99f6eb1ba",
+          "identical": false,
+          "identical_ignoring_trailing_whitespace": false
+        },
+        {
+          "archive_member": "GATECH/Spring2025/biol7210/my_first_wf/work/ea/612da816dbb3898dccb9d424fa3af9/mini_1.fastq",
+          "sha256": "fa105c9aacbdebe34242f293676e84050befde828c56954ea12768a99f6eb1ba",
+          "identical": false,
+          "identical_ignoring_trailing_whitespace": false
+        },
+        {
+          "archive_member": "GATECH/Spring2025/biol7210/my_first_wf/work/e6/1c723c30ae691d0478069343215d08/mini_1.fastq",
+          "sha256": "fa105c9aacbdebe34242f293676e84050befde828c56954ea12768a99f6eb1ba",
+          "identical": false,
+          "identical_ignoring_trailing_whitespace": false
+        },
+        {
+          "archive_member": "GATECH/Spring2025/biol7210/my_first_wf/work/f9/a546ec941b9c32f5f322cfc68d52cf/mini_1.fastq",
+          "sha256": "fa105c9aacbdebe34242f293676e84050befde828c56954ea12768a99f6eb1ba",
+          "identical": false,
+          "identical_ignoring_trailing_whitespace": false
+        },
+        {
+          "archive_member": "GATECH/Spring2025/biol7210/my_first_wf/work/ff/b47690bb0f50751f1ed1324a398426/mini_1.fastq",
+          "sha256": "fa105c9aacbdebe34242f293676e84050befde828c56954ea12768a99f6eb1ba",
+          "identical": false,
+          "identical_ignoring_trailing_whitespace": false
+        },
+        {
+          "archive_member": "GATECH/Spring2025/biol7210/my_first_wf/work/14/922f6a8da70fec416bf371397530bc/mini_1.fastq",
+          "sha256": "fa105c9aacbdebe34242f293676e84050befde828c56954ea12768a99f6eb1ba",
+          "identical": false,
+          "identical_ignoring_trailing_whitespace": false
+        }
+      ]
+    },
+    {
+      "repository_path": "data/mini_2.fastq",
+      "before_sha256": "3f8fd3e214f140906cd8a0ac29fd85a7a5ba9d93f1a5ba24494f790ed5cd0e3a",
+      "archive_comparisons": [
+        {
+          "archive_member": "GATECH/Spring2025/biol7210/my_first_wf/data/mini_2.fastq",
+          "sha256": "3f8fd3e214f140906cd8a0ac29fd85a7a5ba9d93f1a5ba24494f790ed5cd0e3a",
+          "identical": true,
+          "identical_ignoring_trailing_whitespace": true
+        },
+        {
+          "archive_member": "GATECH/Spring2025/biol7210/my_first_wf/work/16/d2c432bbd1e8a23e7f29bebc4779e8/mini_2.fastq",
+          "sha256": "fd6079e6c3e5c43f3af99d3cbe07a1436d04fc0700c8c6c66a658141c3b62cd1",
+          "identical": false,
+          "identical_ignoring_trailing_whitespace": false
+        },
+        {
+          "archive_member": "GATECH/Spring2025/biol7210/my_first_wf/work/5b/ce31a002c34897fb8016edd6c354b9/mini_2.fastq",
+          "sha256": "fd6079e6c3e5c43f3af99d3cbe07a1436d04fc0700c8c6c66a658141c3b62cd1",
+          "identical": false,
+          "identical_ignoring_trailing_whitespace": false
+        },
+        {
+          "archive_member": "GATECH/Spring2025/biol7210/my_first_wf/work/ea/612da816dbb3898dccb9d424fa3af9/mini_2.fastq",
+          "sha256": "fd6079e6c3e5c43f3af99d3cbe07a1436d04fc0700c8c6c66a658141c3b62cd1",
+          "identical": false,
+          "identical_ignoring_trailing_whitespace": false
+        },
+        {
+          "archive_member": "GATECH/Spring2025/biol7210/my_first_wf/work/e6/1c723c30ae691d0478069343215d08/mini_2.fastq",
+          "sha256": "fd6079e6c3e5c43f3af99d3cbe07a1436d04fc0700c8c6c66a658141c3b62cd1",
+          "identical": false,
+          "identical_ignoring_trailing_whitespace": false
+        },
+        {
+          "archive_member": "GATECH/Spring2025/biol7210/my_first_wf/work/f9/a546ec941b9c32f5f322cfc68d52cf/mini_2.fastq",
+          "sha256": "fd6079e6c3e5c43f3af99d3cbe07a1436d04fc0700c8c6c66a658141c3b62cd1",
+          "identical": false,
+          "identical_ignoring_trailing_whitespace": false
+        },
+        {
+          "archive_member": "GATECH/Spring2025/biol7210/my_first_wf/work/ff/b47690bb0f50751f1ed1324a398426/mini_2.fastq",
+          "sha256": "fd6079e6c3e5c43f3af99d3cbe07a1436d04fc0700c8c6c66a658141c3b62cd1",
+          "identical": false,
+          "identical_ignoring_trailing_whitespace": false
+        },
+        {
+          "archive_member": "GATECH/Spring2025/biol7210/my_first_wf/work/14/922f6a8da70fec416bf371397530bc/mini_2.fastq",
+          "sha256": "fd6079e6c3e5c43f3af99d3cbe07a1436d04fc0700c8c6c66a658141c3b62cd1",
+          "identical": false,
+          "identical_ignoring_trailing_whitespace": false
+        }
+      ]
+    }
+  ]
+}

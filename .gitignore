@@ -4,3 +4,8 @@ work/
 .nextflow/
 .nextflow.log*
 .DS_Store
+
+output*/
+examples/generated/
+trace*.tsv
+report*.html

@@ -1,0 +1,6 @@
+.git
+work
+.nextflow*
+results
+output*
+examples/generated
