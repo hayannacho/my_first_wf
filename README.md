@@ -63,7 +63,24 @@ output/
     ... SPAdes logs and intermediate files
 ```
 
-The old `results/` tree is a committed **historical coursework output**, not the result of a new run or proof of current validation. Its nested `results/spades_output/spades_output/` path came from the original publishing configuration. New runs use the separate `output/` tree and avoid that duplicated directory level. Generated output and work files are ignored by Git. Reusing an output directory replaces corresponding published files; use a new `--outdir` when comparing runs.
+The `results/` tree is a committed **historical coursework output**, not the result of a new run or proof of current validation:
+
+```text
+results/
+  clean_1.fastq          fastp output
+  clean_2.fastq
+  seqkit_stats.txt
+  spades_output/
+    contigs.fasta        2 contigs, 37 and 34 bp
+    params.txt           SPAdes 3.15.3, --careful
+    spades.log
+```
+
+It has been pruned to the final products and the run record. The 91 SPAdes working files it also held — per-k `configs/*.info`, `pipeline_state/` markers, assembly graphs, BWA indexes, error-corrected reads and mismatch-corrector output — are tool internals and were removed; they remain in the Git history. The original publishing configuration nested these under `results/spades_output/spades_output/`, and that duplicated directory level is gone here as well.
+
+The archived `contigs.fasta` holds two low-complexity contigs of 37 and 34 bp. That is what SPAdes produces from a 5,000-read subset: it records what the workflow ran, not a usable assembly.
+
+New runs write to the separate `output/` tree. Generated output and work files are ignored by Git. Reusing an output directory replaces corresponding published files; use a new `--outdir` when comparing runs.
 
 ## Other execution options
 

@@ -8,7 +8,8 @@ Before this update, `main.nf`, `nextflow.config`, `data/mini_1.fastq` and `data/
 
 - Preserve the original three-process topology and process names.
 - Add `--read1`, `--read2` and `--outdir`; resolve default inputs relative to the project and fail for missing files.
-- Publish new outputs under `output/` and remove the duplicated SPAdes directory level, leaving committed historical `results/` files untouched.
+- Publish new outputs under `output/` and remove the duplicated SPAdes directory level.
+- Prune the committed historical `results/` tree to its final products and run record: `clean_1.fastq`, `clean_2.fastq`, `seqkit_stats.txt`, `spades_output/contigs.fasta`, `spades_output/params.txt` and `spades_output/spades.log`. The 91 SPAdes working files removed (per-k `configs/*.info`, `pipeline_state/` markers, assembly graphs, BWA indexes, error-corrected reads, mismatch-corrector output) are tool internals and remain in the Git history. The kept files are byte-identical to the archived run; the duplicated `spades_output/spades_output/` level is flattened.
 - Pass task CPUs to fastp/SPAdes, use two CPUs and a 4 GB SPAdes limit for the small examples, and declare Phred+33 to avoid ambiguous quality-offset autodetection on synthetic data.
 - Add a Dockerfile for a complete Linux amd64 execution environment, pinned Nextflow distribution checksum, synthetic read generator and output checks.
 - Update ignored generated files and README to distinguish archived results, current verification, input provenance and assembly limits.

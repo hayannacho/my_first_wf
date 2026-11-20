@@ -29,4 +29,4 @@ The archived subset began with 5,000 reads per mate; the synthetic input began w
 - Synthetic constant-quality reads caused SPAdes quality-offset autodetection to fail; explicit Phred+33 resolved the failure. The documented workflow expects Phred+33 inputs.
 - Inputs and output paths are now configurable, with missing-path checking. Small-demo resource limits are explicit.
 
-Original historical `results/` and `flow.png` are retained as archive artifacts, not current validation evidence. The default output directory and synthetic generated inputs are ignored by Git.
+The historical `results/` tree and `flow.png` are retained as archive artifacts, not current validation evidence. `results/` has been pruned to its final products and run record; the SPAdes working files removed from it remain in the Git history. The default output directory and synthetic generated inputs are ignored by Git.
